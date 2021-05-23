@@ -1,7 +1,7 @@
 # Личный проект «Нёрдс»
 
 * Студент: [Денис Туманенков](https://up.htmlacademy.ru/htmlcss/31/user/29559).
-* Наставник: `Неизвестно`.
+* Наставник: [Юрий Зайцев](https://htmlacademy.ru/profile/yuryzaytsev).
 
 ---
 

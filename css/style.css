@@ -1,41 +1,52 @@
-/* Variables */
-:root{
-  --basic-black:#000000;
-  --basic-white:#ffffff;
-  --header-background-gray:#EEEEEE;
-  --button-red:#FB565A;
-  --button-green:#00CA74;
-  --button-yellow:#EFC849;
+/* Переменные */
+:root {
+  --basic-black: #000000;
+  --basic-white: #ffffff;
+  --background-gray: #eeeeee;
+  --basic-gray-white:#e1e1e1;
+  --basic-gray-middle: #666666;
+  --basic-gray-dark: #444444;
+  --basic-gray-blue: #283136;
+
+  --button-red: #fb565a;
+  --button-red-middle:#e74246;
+  --button-red-dark:#d7373b;
+
+  --button-green: #00ca74;
+  --button-green-middle: #00bc6c;
+  --button-green-dark: #00aa62;
+
+  --button-yellow: #efc849;
+  --button-yellow-middle: #eab534;
+  --button-yellow-dark: #e5a722;
 }
 
-/* Fonts*/
+/* Шрифты */
 
 @font-face {
   font-family: "Roboto";
-  src:
-    url("../fonts/roboto.woff2") format(woff2),
+  src: url("../fonts/roboto.woff2") format(woff2),
     url("../fonts/roboto.woff") format(woff);
-    font-weight: 400;
-    font-style: normal;
+  font-weight: 400;
+  font-style: normal;
 }
 
 @font-face {
   font-family: "Roboto";
-  src:
-    url("../fonts/robotomedium.woff2") format(woff2),
+  src: url("../fonts/robotomedium.woff2") format(woff2),
     url("../fonts/robotomedium.woff") format(woff);
-    font-weight: 700;
-    font-style: normal;
-}
-
-[hidden]{
-  display: none;
+  font-weight: 700;
+  font-style: normal;
 }
 
 /* Global */
 
-body{
-  min-width: 960px;
+[hidden] {
+  display: none;
+}
+
+body {
+  min-width: 1160px;
   margin: 0;
   padding: 0;
   font-family: "Roboto", Arial, sans-serif;
@@ -46,68 +57,70 @@ body{
   background-color: var(--basic-white);
 }
 
-a{
+a {
   text-decoration: none;
 }
 
-img{
+img {
   max-width: 100%;
   height: auto;
 }
 
-/* style */
+/* Header */
 
-.main-header{
-  background-color: var(--header-background-gray);
+.main-header {
+  background-color: var(--background-gray);
 }
 
-.site-navigation-link{
+.site-navigation-link {
   color: var(--basic-black);
 }
 
-.site-navigation-link:hover{
-  color: #FB565A;
+.site-navigation-link:hover {
+  color: var(--button-red);
 }
 
-.site-navigation-link:focus{
+.site-navigation-link:focus {
   opacity: 30%;
 }
 
-.main-header-navigation{
+.main-header-navigation {
   text-transform: uppercase;
   color: var(--basic-black);
   background-color: transparent;
   font-weight: 500;
   line-height: 30px;
 }
-.site-navigation{
+.site-navigation {
   list-style: none;
 }
 
-.cart{
+.cart {
   text-transform: uppercase;
   color: var(--basic-black);
   font-weight: 500;
   line-height: 30px;
 }
 
-.cart:hover{
-  color: #FB565A;
+.cart:hover {
+  color: var(--button-red);
 }
 
-.cart:focus{
+.cart:focus {
   opacity: 30%;
 }
 
-.slider{
+/* Slider */
+
+.slider {
   color: var(--basic-black);
 }
 
-.slider-features-list{
+.slider-features-list {
   list-style: none;
 }
 
-.slider-features-list-item{
+.slider-features-list-item {
   font-family: "Roboto", Arial, sans-serif;
   font-size: 16px;
   font-weight: 400;
@@ -115,60 +128,77 @@ img{
   color: var(--basic-black);
 }
 
-.slider-slogan{
+.slider-slogan {
   font-weight: 500px;
   font-size: 55px;
   line-height: 55px;
 }
 
-.button{
+.button {
   font: inherit;
   text-align: center;
   color: var(--basic-white);
   vertical-align: middle;
   text-transform: uppercase;
+  border: none;
 }
-.button:focus{
+.button:focus {
   color: rgba(white, 0.3);
 }
-.features-button{
+.features-button {
   background-color: var(--button-red);
 }
 
-.button-red{
+.button-red {
   background-color: var(--button-red);
 }
 
-.button-red:hover{
-  background-color: #E74246;
+.button-red:hover {
+  background-color: var(--button-red-middle);
 }
 
-.button-red:focus{
-  background-color: #D7373B;
+.button-red:focus {
+  background-color: var(--button-red-dark);
 }
 
-.button-green{
+.button-green {
   background-color: var(--button-green);
 }
 
-.button-yellow{
+.button-green:hover {
+  background-color: var(--button-green-middle);
+}
+
+.button-green:focus {
+  background-color: var(--button-green-dark);
+}
+
+.button-yellow {
   background-color: var(--button-yellow);
 }
 
-.slider-button{
+.button-yellow:hover {
+  background-color: var(--button-yellow-middle);
+}
+
+.button-yellow:focus {
+  background-color: var(--button-yellow-dark);
+}
+
+.slider-button {
   background-color: var(--basic-white);
 }
 
 /* Сервисы */
-.services{
+.services {
   background-color: var(--basic-white);
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
-  color:#283136;
+  color: var(--basic-gray-blue);
 }
 
-h3{
+h3 {
   text-transform: uppercase;
   font-size: 24px;
   font-weight: 700;
@@ -176,6 +206,137 @@ h3{
   color: var(--basic-black);
 }
 
-.services-list{
+.services-list {
   list-style: none;
+}
+
+/* О компании */
+
+.about {
+  background-color: var(--basic-white);
+}
+
+.about-left-side {
+  color: var(--basic-gray-blue);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.about-slogan {
+  font-family: inherit;
+  color: var(--basic-black);
+  font-size: 45px;
+  font-weight: 500;
+  line-height: 45px;
+}
+
+.about-list {
+  list-style: none;
+}
+
+.about-right-side {
+  color: var(--basic-gray-blue);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+.about-metrics {
+  background-color: var(--basic-white);
+}
+
+.about-metrics caption {
+  color: var(--basic-black);
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
+.about-metrics-percent {
+  color: var(--basic-black);
+  font-size: 45px;
+  font-weight: 700;
+  line-height: 64px;
+}
+
+/* Клиенты */
+
+.clients-list {
+  list-style: none;
+}
+
+.clients-item {
+  background-color: var(--basic-white);
+  opacity: 0.2;
+}
+
+.clients-item:hover {
+  opacity: 1;
+}
+
+.clients-item:focus {
+  opacity: 0.1;
+}
+
+/* Футер */
+
+.main-footer {
+  background-color: var(--basic-white);
+  color: var(--basic-gray-dark);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+}
+
+/* Контакты */
+
+.contact-list {
+  background-color: var(--basic-white);
+  color: var(--basic-gray-middle);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+.contact-list h3 {
+  font-size: 18px;
+}
+
+.contact-phone {
+  color: inherit;
+}
+
+.map-marker {
+  background-color: var(--basic-white);
+}
+
+/* Соцсети */
+
+.social-networks {
+  background-color: var(--basic-white);
+}
+
+.social-networks-list {
+  list-style: none;
+}
+
+.social-networks-item {
+  background-color: var(--basic-gray-white);
+}
+
+.social-networks-item:hover {
+  background-color: var(--button-red-middle);
+}
+
+.social-networks-item:focus {
+  background-color: var(--button-red-dark);
+}
+
+.social-networks-slogan {
+  color: var(--basic-black);
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 36px;
 }

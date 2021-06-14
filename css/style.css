@@ -11,6 +11,7 @@
   --button-red: #fb565a;
   --button-red-middle:#e74246;
   --button-red-dark:#d7373b;
+  --button-white:rgba(255, 255, 255, 0.3);
 
   --button-green: #00ca74;
   --button-green-middle: #00bc6c;
@@ -129,22 +130,25 @@ img {
 }
 
 .slider-slogan {
-  font-weight: 500px;
+  font-weight: 500;
   font-size: 55px;
   line-height: 55px;
 }
 
 .button {
   font: inherit;
+  font-weight: 500;
   text-align: center;
   color: var(--basic-white);
   vertical-align: middle;
   text-transform: uppercase;
   border: none;
 }
-.button:focus {
-  color: rgba(white, 0.3);
+
+.button:active {
+  color: var(--button-white);
 }
+
 .features-button {
   background-color: var(--button-red);
 }
@@ -157,8 +161,10 @@ img {
   background-color: var(--button-red-middle);
 }
 
-.button-red:focus {
+.button-red:focus,
+.button-red:active {
   background-color: var(--button-red-dark);
+  color: var(--basic-white);
 }
 
 .button-green {
@@ -169,7 +175,8 @@ img {
   background-color: var(--button-green-middle);
 }
 
-.button-green:focus {
+.button-green:focus,
+.button-green:active {
   background-color: var(--button-green-dark);
 }
 
@@ -181,8 +188,15 @@ img {
   background-color: var(--button-yellow-middle);
 }
 
-.button-yellow:focus {
+.button-yellow:focus,
+.button-yellow:active {
   background-color: var(--button-yellow-dark);
+}
+
+.button-red:active,
+.button-green:active,
+.button-yellow:active {
+  color: var(--button-white);
 }
 
 .slider-button {
@@ -330,7 +344,8 @@ h3 {
   background-color: var(--button-red-middle);
 }
 
-.social-networks-item:focus {
+.social-networks-item:focus,
+.social-networks-item:active {
   background-color: var(--button-red-dark);
 }
 

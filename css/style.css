@@ -3,6 +3,8 @@
   --basic-black: #000000;
   --basic-white: #ffffff;
   --background-gray: #eeeeee;
+  --background-item-grey: #4d4d4d;
+  --background-item-grey-light: :rgba(77, 77, 77, 0.12);
   --basic-gray-white:#e1e1e1;
   --basic-gray-middle: #666666;
   --basic-gray-dark: #444444;
@@ -12,6 +14,7 @@
   --button-red-middle:#e74246;
   --button-red-dark:#d7373b;
   --button-white:rgba(255, 255, 255, 0.3);
+  --button-black:rgba(0, 0, 0, 0.3);
 
   --button-green: #00ca74;
   --button-green-middle: #00bc6c;
@@ -20,24 +23,11 @@
   --button-yellow: #efc849;
   --button-yellow-middle: #eab534;
   --button-yellow-dark: #e5a722;
-}
 
-/* Шрифты */
+  --button-gray-middle: #dfdfdf;
+  --button-gray-dark: #d5d5d5;
 
-@font-face {
-  font-family: "Roboto";
-  src: url("../fonts/roboto.woff2") format(woff2),
-    url("../fonts/roboto.woff") format(woff);
-  font-weight: 400;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Roboto";
-  src: url("../fonts/robotomedium.woff2") format(woff2),
-    url("../fonts/robotomedium.woff") format(woff);
-  font-weight: 700;
-  font-style: normal;
+  --scale-gray: #d7dcdc;
 }
 
 /* Global */
@@ -164,7 +154,6 @@ img {
 .button-red:focus,
 .button-red:active {
   background-color: var(--button-red-dark);
-  color: var(--basic-white);
 }
 
 .button-green {
@@ -192,13 +181,13 @@ img {
 .button-yellow:active {
   background-color: var(--button-yellow-dark);
 }
-
+/*
 .button-red:active,
 .button-green:active,
 .button-yellow:active {
   color: var(--button-white);
 }
-
+*/
 .slider-button {
   background-color: var(--basic-white);
 }
@@ -354,4 +343,171 @@ h3 {
   font-size: 36px;
   font-weight: 700;
   line-height: 36px;
+}
+
+/* Каталог */
+
+h1 {
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 55px;
+  line-height: 55px;
+  font-weight: 500;
+  color: var(--basic-black);
+  background-color: var(--background-gray);
+}
+
+.filter {
+  background-color: var(--basic-white);
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  color: var(--basic-gray-blue);
+}
+
+.caption {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--basic-black);
+}
+
+.range-controls {
+  background-color: var(--background-gray);
+}
+
+.scale {
+  background-color: var(--scale-gray);
+}
+
+.bar {
+  background-color:var(--button-green) ;
+}
+
+.toggle {
+  background-color: var(--basic-white);
+}
+
+.filter-form label {
+  line-height: 22px;
+  text-transform: uppercase;
+}
+
+.cost-input {
+  background-color: var(--background-gray);
+  line-height: 22px;
+}
+
+.button-gray {
+  background-color: var(--background-gray);
+  color: var(--basic-black);
+}
+
+.button-gray:hover {
+  background-color:var(--button-gray-middle) ;
+}
+
+.button-gray:active,
+.button-gray:focus {
+  background-color: var(--button-gray-dark);
+  color: var(--button-black);
+}
+
+/* сортировка */
+
+.sort {
+  background-color: var(--basic-white);
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: var(--basic-black);
+}
+
+.sort-list {
+  list-style: none;
+}
+
+.sort-link {
+  color: var(--button-black);
+}
+
+.active-link,
+.sort-link:active,
+.sort-link:focus {
+  color: var(--basic-black);
+}
+
+/* шаблоны */
+
+.templates {
+  background-color: var(--basic-white);
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 400;
+  color: var(--basic-gray-middle);
+}
+
+.templates-item {
+  background-color: var(--background-item-grey);
+}
+
+.templates-item:hover {
+  background-color: var(--background-item-grey-light);
+}
+
+.templates-overview {
+  background-color: var(--background-gray);
+}
+
+.templates-list {
+  list-style: none;
+}
+
+.templates-link {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+  color: var(--basic-black);
+}
+
+.templates-link:hover {
+  color: var(--button-red);
+}
+
+.templates-link:active,
+.templates-link:focus {
+  color: var(--button-black);
+}
+
+/* страничная навигация */
+
+.pagination {
+  background-color: var(--basic-white);
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
+  color: var(--basic-black);
+}
+
+.page-number {
+  background-color: var(--background-gray);
+}
+
+.page-number:hover {
+  background-color: var(--button-gray-middle);
+}
+
+.page-number:active {
+  background-color: var(--button-gray-dark);
+  color: var(--button-black);
+}
+
+.page-number:focus {
+  background-color: var(--button-white);
+  border: 3px solid var(--background-item-grey-light);
 }

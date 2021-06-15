@@ -492,22 +492,14 @@ h1 {
   line-height: 18px;
   font-weight: 500;
   color: var(--basic-black);
+  list-style: none;
 }
 
 .page-number {
   background-color: var(--background-gray);
 }
 
-.page-number:hover {
-  background-color: var(--button-gray-middle);
-}
-
-.page-number:active {
-  background-color: var(--button-gray-dark);
-  color: var(--button-black);
-}
-
-.page-number:focus {
+.active-page {
   background-color: var(--button-white);
   border: 3px solid var(--background-item-grey-light);
 }

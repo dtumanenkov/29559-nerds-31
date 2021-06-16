@@ -10,21 +10,25 @@
   </head>
   <body>
     <header class="main-header">
-      <nav class="main-header-navigation">
-        <a class="main-header-logo" href="index.html"><img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип студии Нёрдс"></a>
-        <ul class="site-navigation">
-          <li><a class="site-navigation-link" href="blank.html">Студия</a></li>
-          <li><a class="site-navigation-link" href="blank.html">Клиенты</a></li>
-          <li><a class="site-navigation-link" href="catalog.html">Магазин</a></li>
-          <li><a class="site-navigation-link" href="blank.html">Контакты</a></li>
-        </ul>
-        <div class="cart-icon"></div>
-        <a class="site-navigation-link" href="blank.html">Корзина</a>
-      </nav>
+      <div class="container">
+        <nav class="main-header-navigation">
+          <a class="main-header-logo" href="index.html"><img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип студии Нёрдс"></a>
+          <ul class="site-navigation">
+            <li><a class="site-navigation-link" href="blank.html">Студия</a></li>
+            <li><a class="site-navigation-link" href="blank.html">Клиенты</a></li>
+            <li><a class="site-navigation-link" href="catalog.html">Магазин</a></li>
+            <li><a class="site-navigation-link" href="blank.html">Контакты</a></li>
+          </ul>
+          <div class="user-cart">
+            <div class="cart-icon"></div>
+            <a class="site-navigation-link" href="blank.html">Корзина</a>
+          </div>  
+        </nav>
+      </div>  
     </header>
     <main>
       <h1 hidden>Главная страница студии Нёрдс</h1>
-      <section class="slider">
+      <section class="slider container">
         <h2 hidden>Наши преимущества</h2>
           <div class="slider-control">
             <button class="slider-button control-active" type="button">1</button>
@@ -33,9 +37,9 @@
           </div>
           <ul class="slider-features-list">
             <li class="slider-features-list-item">
-              <img src="img/nerds-index-slide1-1.png" width="760" height="431" alt="Слайдер-картинка с тремя смартфонами">
+              <img class="slider-img" src="img/nerds-index-slide1-1.png" width="760" height="431" alt="Слайдер-картинка с тремя смартфонами">
               <p class="slider-slogan">Долго, дорого, скрупулезно.</p>
-              <p>Математически выверенный дизайн<br> для вашего сайта или мобильного приложения.</p>
+              <p class="slider-overview">Математически выверенный дизайн<br> для вашего сайта или мобильного приложения.</p>
               <a class="button features-button button-red" href="studio.html">Узнать больше</a>
             </li>
             <li class="slider-features-list-item">

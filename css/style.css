@@ -368,6 +368,8 @@ h3 {
   font-size: 16px;
   font-weight: 400;
   line-height: 18px;
+  width: 319px;
+  height: 308px;
 }
 
 .contact-list h3 {
@@ -387,13 +389,30 @@ h3 {
 .social-networks {
   background-color: var(--basic-white);
 }
+.social-networks-wrapper{
+  display: grid;
+  grid-template-columns: 400px 1fr;
+  grid-template-rows: 43px 38px;
+  grid-template-areas: 
+    "social-networks-list social-networks-slogan"
+    "social-networks-list social-networks-discount";
+}
 
 .social-networks-list {
   list-style: none;
+  outline: 5px solid #e0ee20;
+  outline-offset: -5px;
+  grid-area: social-networks-list;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
 .social-networks-item {
   background-color: var(--basic-gray-white);
+  width: 81px;
+  height: 81px;
+  align-self: center;
+  justify-self: center;
 }
 
 .social-networks-item:hover {
@@ -410,6 +429,17 @@ h3 {
   font-size: 36px;
   font-weight: 700;
   line-height: 36px;
+  height: 43px;
+  outline: 5px solid #2e20ee;
+  outline-offset: -5px;
+  grid-area: social-networks-slogan;
+}
+
+.social-networks-discount {
+  outline: 5px solid #dd20ee;
+  outline-offset: -5px;
+  height: 38px;
+  grid-area: social-networks-discount;
 }
 
 /* Каталог */

@@ -467,7 +467,7 @@ h3 {
   grid-template-columns: 400px 1fr;
   grid-template-rows: 1fr 1fr;
   height: 81px;
-  margin: 59px 0px;
+  margin: 68px 0px;
 }
 
 .social-networks-list {
@@ -486,6 +486,7 @@ h3 {
   background-color: var(--basic-gray-white);
   width: 81px;
   height: 81px;
+  border-radius: 50%;
 }
 
 .social-networks-item:hover {

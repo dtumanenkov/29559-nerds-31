@@ -67,8 +67,8 @@
 }
 
 .container {
-  width: 1200px;
-  margin: 0px auto;
+  width: 1160px;
+  margin: 0 auto;
   padding: 0;
   outline: 5px solid #dd20ee;
   outline-offset: -5px;
@@ -292,9 +292,25 @@ img {
   color: var(--basic-gray-blue);
 }
 
-h3 {
+.services-item h3 {
   text-transform: uppercase;
   font-size: 24px;
+  font-weight: 700;
+  line-height: 30px;
+  color: var(--basic-black);
+}
+
+.about-left-side h3 {
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  color: var(--basic-gray-blue);
+}
+
+.templates-overview h3 {
+  text-transform: uppercase;
+  font-size: 18px;
   font-weight: 700;
   line-height: 30px;
   color: var(--basic-black);
@@ -415,6 +431,7 @@ h3 {
 .contact-block{
   position: relative;
   height: 416px;
+  background-image: url("/img/map.png");
 }
 
 .map {
@@ -554,6 +571,17 @@ h3 {
   padding-bottom: 108px;
   margin: 0 auto;
   text-align: center;
+}
+
+.slider h2, .social-networks h2,
+.clients h2, .slider h2,
+.main-footer h2, .services h2,
+.filter h2, .sort h2, .social-networks h2 {
+  font-family: inherit;
+  color: var(--basic-black);
+  font-size: 45px;
+  font-weight: 500;
+  line-height: 45px;
 }
 
 .page-catalog{

@@ -1,58 +1,62 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
     <link rel="icon" href="favicon.ico">
-    <link  rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"> 
+    <link  rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
     <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet"> 
+    <link href="css/style.css" rel="stylesheet">
   </head>
-  <body>
+  <body class="page-body">
     <header class="main-header">
-      <nav class="main-header-navigation">
-        <a class="main-header-logo" href="index.html"><img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип студии Нёрдс"></a>
-        <ul class="site-navigation">
-          <li><a class="site-navigation-link" href="blank.html">Студия</a></li>
-          <li><a class="site-navigation-link" href="blank.html">Клиенты</a></li>
-          <li><a class="site-navigation-link" href="catalog.html">Магазин</a></li>
-          <li><a class="site-navigation-link" href="blank.html">Контакты</a></li>
-        </ul>
-        <div class="cart-icon"></div>
-        <a class="site-navigation-link" href="blank.html">Корзина</a>
-      </nav>
+      <div class="container">
+        <nav class="main-header-navigation">
+          <a class="main-header-logo" href="index.html"><img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип студии Нёрдс"></a>
+          <ul class="site-navigation">
+            <li><a class="site-navigation-link" href="blank.html">Студия</a></li>
+            <li><a class="site-navigation-link" href="blank.html">Клиенты</a></li>
+            <li><a class="site-navigation-link" href="catalog.html">Магазин</a></li>
+            <li><a class="site-navigation-link" href="blank.html">Контакты</a></li>
+          </ul>
+          <div class="user-cart">
+            <div class="cart-icon"></div>
+            <a class="site-navigation-link" href="blank.html">Корзина</a>
+          </div>
+        </nav>
+      </div>
     </header>
-    <main>
+    <main class="main">
       <h1 hidden>Главная страница студии Нёрдс</h1>
-      <section class="slider">
+      <section class="slider container">
         <h2 hidden>Наши преимущества</h2>
+          <ul class="slider-features-list">
+            <li class="slider-features-list-item">
+              <img class="slider-img" src="img/nerds-index-slide1-1.png" width="760" height="431" alt="Слайдер-картинка с тремя смартфонами">
+              <p class="slider-slogan">Долго, дорого, скрупулезно.</p>
+              <p class="slider-overview">Математически выверенный дизайн<br> для вашего сайта или мобильного приложения.</p>
+              <a class="button features-button button-red" href="studio.html">Узнать больше</a>
+            </li>
+            <li class="visually-hidden slider-features-list-item">
+              <img class="slider-img" src="img/nerds-index-slide2-1.png" width="760" height="431" alt="Слайдер-картинка с двумя мониторами">
+              <p class="slider-slogan">Любим математику<br>как никто другой</p>
+              <p class="slider-overview">Никакого креатива, только математические формулы<br>для расчета идеальных пропорций</p>
+              <a class="button features-button button-red" href="studio.html">Узнать больше</a>
+            </li>
+            <li class="visually-hidden slider-features-list-item">
+              <img class="slider-img" src="img/nerds-index-slide3-1.png" width="760" height="431" alt="Слайдер-картинка с монитором и смартфоном">
+              <p class="slider-slogan">Только ночь,<br>только хардкор</p>
+              <p class="slider-overview">Работать днем, как все? Мы против этого.<br>Ближе к полуночи работа только начинается.</p>
+              <a class="button features-button button-red" href="studio.html">Узнать больше</a>
+            </li>
+          </ul>
           <div class="slider-control">
             <button class="slider-button control-active" type="button">1</button>
             <button class="slider-button" type="button" disabled>2</button>
             <button class="slider-button" type="button" disabled>3</button>
           </div>
-          <ul class="slider-features-list">
-            <li class="slider-features-list-item">
-              <img src="img/nerds-index-slide1-1.png" width="760" height="431" alt="Слайдер-картинка с тремя смартфонами">
-              <p class="slider-slogan">Долго, дорого, скрупулезно.</p>
-              <p>Математически выверенный дизайн<br> для вашего сайта или мобильного приложения.</p>
-              <a class="button features-button button-red" href="studio.html">Узнать больше</a>
-            </li>
-            <li class="slider-features-list-item">
-              <img src="img/nerds-index-slide2-1.png" width="760" height="431" alt="Слайдер-картинка с двумя мониторами">
-              <p class="slider-slogan">Любим математику<br>как никто другой</p>
-              <p>Никакого креатива, только математические формулы<br>для расчета идеальных пропорций</p>
-              <a class="button features-button button-red" href="studio.html">Узнать больше</a>
-            </li>
-            <li class="slider-features-list-item">
-              <img src="img/nerds-index-slide3-1.png" width="760" height="431" alt="Слайдер-картинка с монитором и смартфоном">
-              <p class="slider-slogan">Только ночь,<br>только хардкор</p>
-              <p>Работать днем, как все? Мы против этого.<br>Ближе к полуночи работа только начинается.</p>
-              <a class="button features-button button-red" href="studio.html">Узнать больше</a>
-            </li>
-          </ul>
       </section>
-      <section class="services">
+      <section class="services container">
         <h2 hidden>Услуги</h2>
         <ul class="services-list">
           <li class="services-item">
@@ -75,7 +79,7 @@
            </li>
         </ul>
       </section>
-      <section class="about">
+      <section class="about container">
         <div class="about-left-side">
           <h2 hidden>О нас</h2>
           <p class="about-slogan">Мы — маленькая, но гордая<br>дизайн-студия из Краснодара.</p>
@@ -106,7 +110,7 @@
           </table>
         </div>
       </section>
-      <section class="clients">
+      <section class="clients container">
         <h2 hidden>Клиенты</h2>
         <ul class="clients-list">
           <li class="clients-item">
@@ -133,42 +137,46 @@
       </section>
     </main>
     <footer class="main-footer">
-      <section class="contacts">
-        <h2 hidden>Контакты</h2>
-        <div class="map">
+      <h2 hidden>Контакты</h2>
+      <section class="contact-block container">
+        <div class="map visually-hidden">
           <img src="img/map.png" width="1440" height="416" alt="Карта офиса cтудии Nerds по адресу наб. Реки Карповки, 5, лит П">
-        </div>
-        <div class="contact-list">
-          <h3>NЁRDS DESIGN STUDIO</h3>
-          <p>наб. Реки Карповки,<br>5 лит П, Санкт-Петербург</p>
-          <a class="contact-phone" href="tel:+78005558628">+7 800 555-86-28</a>
-          <a class="button button-red" href="#">Напишите нам</a>
         </div>
         <div class="map-marker">
           <img src="img/map-marker.png" width="231" height="190" alt="Местоположение офиса студии Nerds">
         </div>
+        <div class="contact-list">
+          <h3>NЁRDS DESIGN STUDIO</h3>
+          <p>наб. Реки Карповки,<br>5 лит П, Санкт-Петербург</p>
+          <p>
+            <a class="contact-phone" href="tel:+78005558628">+7 800 555-86-28</a>
+          </p>
+          <a class="button button-red" href="#">Напишите нам</a>
+        </div>
       </section>
-      <section class="social-networks">
+      <section class="social-networks container">
         <h2 hidden>Мы в социальных сетях</h2>
-        <ul class="social-networks-list">
-          <li class="social-networks-item">
-            <a class="social-networks-item-link"  href="https://vk.com/">
-              <div class="vk-logo">1</div>
-            </a>
-          </li>
-          <li class="social-networks-item">
-            <a href="https://facebook.com">
-              <div class="fb-logo">2</div>
-            </a>
-          </li>
-          <li class="social-networks-item">
-            <a href="https://instagram.com/">
-              <div class="fb-logo">3</div>
-            </a>
-          </li>
-        </ul>
-        <p class="social-networks-slogan">Давайте дружить, это выгодно!</p>
-        <p>Скидка 10% для друзей из социальных сетей.</p>
+        <div class="social-networks-wrapper">
+          <ul class="social-networks-list">
+            <li class="social-networks-item">
+              <a class="social-networks-item-link"  href="https://vk.com/">
+                <div class="vk-logo"></div>
+              </a>
+            </li>
+            <li class="social-networks-item">
+              <a href="https://facebook.com">
+                <div class="fb-logo"></div>
+              </a>
+            </li>
+            <li class="social-networks-item">
+              <a href="https://instagram.com/">
+                <div class="insta-logo"></div>
+              </a>
+            </li>
+          </ul>
+          <p class="social-networks-slogan">Давайте дружить, это выгодно!</p>
+          <p class="social-networks-discount">Скидка 10% для друзей из социальных сетей.</p>
+        </div>
       </section>
     </footer>
   </body>

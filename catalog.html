@@ -44,51 +44,51 @@
                 <div class="toggle min-toggle"></div>
                 <div class="toggle max-toggle"></div>
               </div>
-              <label>От<input class="cost-input" type="text" name="min_value" value="0"></label>
-              <label>До<input class="cost-input" type="text" name="max_value" value="15000"></label>
+              <label class="low-price">От<input class="cost-input" type="text" name="min_value" value="0"></label>
+              <label class="high-price">До<input class="cost-input" type="text" name="max_value" value="150 000"></label>
             </fieldset>
-            <fieldset class="grid-type">
+            <fieldset class="filter-grid-type">
               <legend class="caption">Сетка:</legend>
               <ul>
                 <li>
                   <input type="radio" name="radio" id="filter-adaptive" checked value="adaptive">
-                  <label for="filter-adaptive">Адаптивная</label>
+                  <label class="grid-type-label" for="filter-adaptive">Адаптивная</label>
                 </li>
                 <li>
                   <input type="radio" name="radio" id="filter-fixed" value="fixed">
-                  <label for="filter-fixed">Фиксированная</label>
+                  <label class="grid-type-label" for="filter-fixed">Фиксированная</label>
                 </li>
                 <li>
                   <input type="radio" name="radio" id="filter-rubber" value="rubber">
-                  <label for="filter-rubber">Адаптивная</label>
+                  <label class="grid-type-label" for="filter-rubber">Адаптивная</label>
                 </li>
               </ul>
             </fieldset>
-            <fieldset>
+            <fieldset class="filter-features">
               <legend class="caption">Особенности:</legend>
               <ul>
                 <li>
                   <input type="checkbox" name="slider" id="filter-slider" checked value="slider">
-                  <label for="filter-slider">Слайдер</label>
+                  <label class="filter-features-label" for="filter-slider">Слайдер</label>
                 </li>
                 <li>
                   <input type="checkbox" name="advantages" id="filter-advantages" value="advantages">
-                  <label for="filter-advantages">Блок преимуществ</label>
+                  <label class="filter-features-label" for="filter-advantages">Блок преимуществ</label>
                 </li>
                 <li>
                   <input type="checkbox" name="news" id="filter-news" checked value="news">
-                  <label for="filter-news">Новости</label>
+                  <label class="filter-features-label" for="filter-news">Новости</label>
                 </li>
                 <li>
                   <input type="checkbox" name="gallery" id="filter-gallery" value="gallery">
-                  <label for="filter-gallery">Галерея</label>
+                  <label class="filter-features-label" for="filter-gallery">Галерея</label>
                 </li>
                 <li>
                   <input type="checkbox" name="cart" id="filter-cart" value="cart">
-                  <label for="filter-cart">Корзина</label>
+                  <label class="filter-features-label" for="filter-cart">Корзина</label>
                 </li>
               </ul>
-              <button class="button button-gray" type="submit">Показать</button>
+              <button class="button button-gray button-filter" type="submit">Показать</button>
             </fieldset>
         </form>
         </section>
@@ -155,17 +155,17 @@
           </li>
         </ul>
         <ul class="pagination">
-          <li class="page-number">
-            <a class="button button-gray active-page" href="#">1</a>
+          <li>
+            <a class="button button-gray page-number active-page" href="#">1</a>
           </li>
           <li>
-            <a class="button button-gray" href="#">2</a>
+            <a class="button button-gray page-number" href="#">2</a>
           </li>
           <li>
-            <a class="button button-gray" href="#">3</a>
+            <a class="button button-gray page-number" href="#">3</a>
           </li>
           <li>
-            <a class="button button-gray" href="#">Следующая</a>
+            <a class="button button-gray next-page" href="#">Следующая</a>
           </li>
         </ul>
         </section>

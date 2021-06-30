@@ -662,10 +662,6 @@ fieldset ul {
   background-color: var(--basic-white);
 }
 
-.filter-form label {
-  line-height: 22px;
-}
-
 .filter-cost {
   border: none;
 }
@@ -673,6 +669,10 @@ fieldset ul {
 .filter-grid-type {
   border: none;
   margin-top: 54px;
+}
+
+.grid-type {
+  padding-top: 20px;
 }
 
 .grid-type-label {
@@ -685,6 +685,7 @@ fieldset ul {
 
 .filter-features {
   border: none;
+  margin-top: 43px;
 }
 
 .cost-input {
@@ -717,6 +718,7 @@ fieldset ul {
 .button-filter{
   width: 260px;
   height: 50px;
+  margin-top: 48px;
 }
 
 .button-gray:hover {
@@ -820,7 +822,7 @@ fieldset ul {
   display: grid;
   grid-template-columns: 360px 360px;
   grid-template-rows: 620px 620px 620px;
-  column-gap: 30px;
+  column-gap: 40px;
   row-gap: 30px;
 }
 

@@ -115,10 +115,10 @@ img {
   grid-template-columns: 160px auto min-content;
 }
 
-.main-header-logo {
-  /* outline: 5px solid #00aa62;
-  outline-offset: -5px; */
-}
+/* .main-header-logo {
+  outline: 5px solid #00aa62;
+  outline-offset: -5px;
+} */
 
 .logo-wrapper {
   width: 160px;
@@ -168,10 +168,13 @@ img {
   color: var(--basic-black);
   margin: 0px auto;
   padding: 0px;
-  position: relative;
+
+  margin-bottom: 80px;
+  background-color: var(--background-gray);
 }
 
 .slider-features-list {
+  position: relative;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -211,6 +214,7 @@ img {
   /* outline: 5px solid #c4c117;
   outline-offset: -5px; */
   padding-top: 78px;
+  margin-top: 0px;
   width: 538px;
   height: 111px;
 }
@@ -247,8 +251,8 @@ img {
 
 .slider-control {
   position: absolute;
-  bottom: 95px;
-  right: 530px;
+  bottom: 90px;
+  left: 606px;
 }
 
 .button-red {
@@ -353,6 +357,8 @@ img {
   list-style: none;
   display: flex;
   justify-content: space-between;
+  border-bottom: 2px solid var(--background-gray);
+  margin-bottom: 39px;
 }
 
 .services-item {
@@ -371,6 +377,8 @@ img {
   background-color: var(--basic-white);
   display: grid;
   grid-template-columns: 2fr 1fr;
+  padding-bottom: 73px;
+  border-bottom: 2px solid var(--background-gray);
 }
 
 .about-left-side {
@@ -431,8 +439,12 @@ img {
   list-style: none;
   margin: 0;
   padding: 0;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  height: 180px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid var(--background-gray);
+  margin-bottom: 80px;
 }
 
 .clients-item {
@@ -851,6 +863,12 @@ fieldset ul {
 .templates-link:active,
 .templates-link:focus {
   color: var(--button-black);
+}
+
+.button-templates {
+  display: block;
+  width: 200px;
+  margin: 0 auto;
 }
 
 /* страничная навигация */

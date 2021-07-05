@@ -524,7 +524,7 @@ img {
   position: absolute;
   width: 2px;
   height: 52px;
-  background-color: var(--background-gray);
+  background-color: var(--basic-black);
   right: -48px;
   margin-top: 12px;
 }

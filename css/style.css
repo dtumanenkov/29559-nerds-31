@@ -72,9 +72,7 @@
 .container {
   width: 1160px;
   margin: 0 auto;
-  padding: 0;
-  /* outline: 5px solid #dd20ee;
-  outline-offset: -5px; */
+  padding: 0 20px;
 }
 
 a {
@@ -97,7 +95,7 @@ img {
 
 .site-navigation-link {
   color: var(--basic-black);
-  margin-right: 45px;
+  margin-right: 46px;
   padding-bottom: 25px;
 }
 
@@ -132,9 +130,6 @@ img {
 .logo-wrapper {
   width: 160px;
   height: 65px;
-  /* outline: 5px solid #0011aa;
-  outline-offset: -5px; */
-  padding-left: 20px;
 }
 
 .logo-wrapper:hover {
@@ -154,7 +149,7 @@ img {
   flex-wrap: wrap;
   justify-content: left;
   align-items: center;
-  margin-left: 203px;
+  margin-left: 181px;
   margin-top: 15px;
 }
 
@@ -218,7 +213,6 @@ img {
 
 .slider-features-list-item {
   margin: 0;
-  padding-left: 20px;
   font-family: "Roboto", Arial, sans-serif;
   font-size: 16px;
   font-weight: 400;
@@ -236,24 +230,24 @@ img {
   /* outline: 5px solid #4b3ef5;
   outline-offset: -5px; */
   position: absolute;
-  right: 20px;
+  right: 2px;
 }
 
 .slider-slogan {
   font-weight: 500;
   font-size: 55px;
   line-height: 55px;
-  /* outline: 5px solid #c4c117;
-  outline-offset: -5px; */
   padding-top: 78px;
+  margin-bottom: 0px;
   margin-top: 0px;
   width: 538px;
   height: 111px;
 }
 
 .button {
-  font: inherit;
+  font-family: "Roboto", Arial, sans-serif;
   font-weight: 500;
+  font-size: 16px;
   text-align: center;
   color: var(--basic-white);
   vertical-align: middle;
@@ -262,6 +256,7 @@ img {
   padding-top: 17px;
   padding-bottom: 15px;
   border-radius: 3px;
+  line-height: 18px;
 }
 
 .button:active {
@@ -273,18 +268,19 @@ img {
   outline-offset: -5px; */
   display: block;
   width: 242px;
+  margin-top: 38px;
 }
 
 .slider-overview {
-  /* outline: 5px solid #5dd844;
-  outline-offset: -5px; */
   width: 430px;
+  margin: 0;
+  padding-top: 25px;
 }
 
 .slider-control {
   position: absolute;
-  bottom: 90px;
-  left: 606px;
+  bottom: 96px;
+  left: 536px;
   display: flex;
   gap: 17px;
 }
@@ -514,25 +510,27 @@ img {
 }
 
 /* Клиенты */
+.clients {
+  line-height: 0;
+  padding-top: 44px;
+  padding-bottom: 43px;
+}
 
 .clients-list {
   list-style: none;
   margin: 0;
   padding: 0;
-  height: 180px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   border-bottom: 2px solid var(--background-gray);
-  margin-bottom: 80px;
 }
 
 .clients-item {
   background-color: var(--basic-white);
   opacity: 0.2;
-  /* outline: 5px solid #20e7ee;
-  outline-offset: -5px; */
   padding-left: 20px;
+  height: 99px;
   position: relative;
 }
 
@@ -543,7 +541,6 @@ img {
   height: 52px;
   background-color: var(--basic-black);
   right: -48px;
-  margin-top: 12px;
 }
 
 .clients-item:hover {
@@ -599,6 +596,7 @@ img {
 
 .contact-list h3 {
   font-size: 18px;
+  line-height: 30px;
 }
 
 .contact-phone {

@@ -51,9 +51,7 @@
   color: var(--basic-white);
   background-color: var(--basic-white);
   min-height: 100%;
-  display: grid;
-  grid-template-rows: min-content 1fr min-content;
-  align-content: center;
+  position: relative;
 }
 
 .visually-hidden {
@@ -1019,15 +1017,19 @@ fieldset ul {
 .feedback-popup {
   color: var(--basic-black);
   margin: auto;
-  width: 861px;
-  height: 527px;
+  width: 960px;
+  height: 590px;
   background-color: var(--basic-white);
-  position: relative;
+  position: absolute;
+  z-index: 10;
   box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.4);
+  bottom: 4.5%;
+  left: 24.8%;
 }
 
 .feedback-popup form {
-  margin: 65px 100px 84px 100px; 
+  margin: 70px 100px 84px 100px;
+  position: relative;
 }
 .popup-container {
   display: flex;
@@ -1035,6 +1037,14 @@ fieldset ul {
   justify-content: space-between;
 }
 
+.feedback-popup h3 {
+  font-size: 45px;
+  font-weight: 700;
+  line-height: 30px;
+  margin-top: 63px;
+  margin-bottom: 52px;
+  color: var(--basic-black);
+}
 .popup-close-button {
   width: 21px;
   height: 21px;
@@ -1042,8 +1052,8 @@ fieldset ul {
   background-repeat: no-repeat;
   border: 0;
   position: absolute;
-  right: 10px;
-  top: 10px;
+  right: -10px;
+  top: 8px;
   cursor: pointer;
   opacity: 0.3;
 }
@@ -1052,19 +1062,38 @@ fieldset ul {
   opacity: 1;
 }
 
+.popup-container label {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 18px;
+  color: var(--basic-black);
+}
+
 .feedback-popup input[type="text"] {
-  padding: 16px 0px 16px 16px;
-  width: 300px;
+  padding: 13px 0px 13px 15px;
+  width: 340px;
+  margin-top: 9px;
+  margin-bottom: 37px;
 }
 
 .feedback-popup input[type="email"] {
-  padding: 16px 0px 16px 16px;
-  width: 300px;
+  padding: 13px 0px 13px 16px;
+  width: 340px;
+  margin-top: 9px;
+  margin-bottom: 36px;
 }
 
-.feedback-popup input[type="textarea"] {
-  padding: 16px 0px 16px 16px;
-  width: 640px;
+.feedback-popup textarea {
+  padding: 14px 10px 16px 16px;
+  width: 732px;
+  height: 85px;
+  margin-top: 9px;
+  margin-bottom: 43px;
+  margin-left: 1px;
+  line-height: 18px;
 }
 
-
+.button-popup {
+  display: block;
+  width: 259px;
+}

@@ -22,7 +22,6 @@
             <li><a class="site-navigation-link" href="blank.html">Контакты</a></li>
           </ul>
           <div class="user-cart">
-            <div class="cart-icon"></div>
             <a class="cart-link" href="blank.html">Корзина</a>
           </div>
         </nav>
@@ -52,11 +51,11 @@
               <p class="slider-overview">Работать днем, как все? Мы против этого.<br>Ближе к полуночи работа только начинается.</p>
               <a class="button features-button button-red" href="studio.html">Узнать больше</a>
             </li>
-            <div class="slider-control">
+            <li class="slider-control">
               <button class="slider-button control-active" type="button" aria-label="Первый слайд"></button>
               <button class="slider-button" type="button" aria-label="Второй слайд"></button>
               <button class="slider-button" type="button" aria-label="Третий слайд"></button>
-            </div>
+            </li>
           </ul>
         </div>
       </section>
@@ -163,17 +162,13 @@
         <div class="social-networks-wrapper">
           <ul class="social-networks-list">
             <li class="social-networks-item">
-              <a class="social-networks-item-link vk-logo"  href="https://vk.com/"></a>
+              <a class="social-networks-item-link"  href="https://vk.com/"><img src="img/vk-logo.svg" width="26" height="15" alt="Мы в Вконтакте"></a>
             </li>
             <li class="social-networks-item">
-              <a href="https://facebook.com">
-                <div class="fb-logo"></div>
-              </a>
+              <a class="social-networks-item-link"  href="https://facebook.com/"><img src="img/fb-logo.svg" width="12" height="22" alt="Мы в Фейсбуке"></a>
             </li>
             <li class="social-networks-item">
-              <a href="https://instagram.com/">
-                <div class="insta-logo"></div>
-              </a>
+              <a class="social-networks-item-link"  href="https://instagram.com/"><img src="img/insta-logo.svg" width="21" height="21" alt="Мы в Инстаграме"></a>
             </li>
           </ul>
           <p class="social-networks-slogan">Давайте дружить, это выгодно!</p>
@@ -181,5 +176,17 @@
         </div>
       </section>
     </footer>
+    <section class="feedback-popup">
+      <form method="POST" action="https://echo.htmlacademy.ru/">
+       <h3>Напишите нам</h3>
+       <button class="popup-close-button" type="button"></button>
+       <div class="popup-container">
+        <label>Ваше имя:<br><input type="text" placeholder="Имя Фамилия" name="name and surname"></label>
+        <label>Ваш email:<br><input type="email" placeholder="email@example.com" name="email"></label>
+        <label>Текст письма:<br><input type="textarea" placeholder="В свободной форме" name="other text"></label>
+       </div>
+       <button class="button button-red" type="submit">Отправить</button>
+      </form>
+    </section>
   </body>
 </html>

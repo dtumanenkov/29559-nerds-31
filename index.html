@@ -145,9 +145,6 @@
         <img src="img/map.png" width="1440" height="416" alt="Карта офиса cтудии Nerds по адресу наб. Реки Карповки, 5, лит П">
       </div>
       <section class="contact-block container">
-        <div class="map-marker">
-          <img src="img/map-marker.png" width="231" height="190" alt="Местоположение офиса студии Nerds">
-        </div>
         <div class="contact-list">
           <h3>NЁRDS DESIGN STUDIO</h3>
           <p>наб. Реки Карповки,<br>5 лит П, Санкт-Петербург</p>
@@ -176,14 +173,14 @@
         </div>
       </section>
     </footer>
-    <section class="feedback-popup">
+    <section class="not-active feedback-popup">
       <form method="POST" action="https://echo.htmlacademy.ru/">
        <h3>Напишите нам</h3>
        <button class="popup-close-button" type="button"></button>
        <div class="popup-container">
-        <label>Ваше имя:<br><input type="text" placeholder="Имя Фамилия" name="name and surname"></label>
-        <label>Ваш email:<br><input type="email" placeholder="email@example.com" name="email"></label>
-        <label>Текст письма:<br><textarea name="letter-text" placeholder="В свободной форме" id="letter-text"></textarea></label>
+        <label>Ваше имя:<br><input  type="text" placeholder="Имя Фамилия" name="name-surname"></label>
+        <label>Ваш email:<br><input  type="email" placeholder="email@example.com" name="email"></label>
+        <label>Текст письма:<br><textarea required name="letter-text" placeholder="В свободной форме" id="letter-text"></textarea></label>
        </div>
        <button class="button button-red button-popup" type="submit">Отправить</button>
       </form>

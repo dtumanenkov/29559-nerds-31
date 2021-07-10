@@ -32,6 +32,8 @@
   --slider-control-border: #c1c1c1;
 
   --scale-gray: #d7dcdc;
+  --input-gray: #d7dcde;
+  --input-gray-hover: #b4b9bb;
 }
 
 /* Global */
@@ -41,7 +43,7 @@
 }
 
 .page-body {
-  min-width: 1160px;
+  min-width: 1200px;
   margin: 0;
   padding: 0;
   font-family: "Roboto", Arial, sans-serif;
@@ -173,7 +175,7 @@ img {
   top: 6px;
   width: 15px;
   height: 15px;
-  background-image: url("/img/cart-icon.svg");
+  background-image: url("../img/cart-icon.svg");
   background-repeat: no-repeat;
 }
 
@@ -595,6 +597,7 @@ img {
   font-weight: 400;
   line-height: 22px;
   margin-top: 79px;
+  margin-bottom: 68px;
 }
 
 /* Контакты */
@@ -635,13 +638,6 @@ img {
 
 .contact-phone {
   color: inherit;
-}
-
-.map-marker {
-  z-index: 1;
-  position: absolute;
-  left: 60.5%;
-  top: 16.5%;
 }
 
 /* Соцсети */
@@ -1048,7 +1044,7 @@ fieldset ul {
 .popup-close-button {
   width: 21px;
   height: 21px;
-  background: url("/img/close-cross.svg");
+  background: url("../img/close-cross.svg");
   background-repeat: no-repeat;
   border: 0;
   position: absolute;
@@ -1060,6 +1056,10 @@ fieldset ul {
 
 .popup-close-button:hover {
   opacity: 1;
+}
+
+..popup-close-button:active{
+  opacity: 0.1;
 }
 
 .popup-container label {
@@ -1074,6 +1074,8 @@ fieldset ul {
   width: 340px;
   margin-top: 9px;
   margin-bottom: 37px;
+  border: 2px solid var(--input-gray);
+  border-radius: 3px;
 }
 
 .feedback-popup input[type="email"] {
@@ -1081,6 +1083,8 @@ fieldset ul {
   width: 340px;
   margin-top: 9px;
   margin-bottom: 36px;
+  border: 2px solid var(--input-gray);
+  border-radius: 3px;
 }
 
 .feedback-popup textarea {
@@ -1091,6 +1095,28 @@ fieldset ul {
   margin-bottom: 43px;
   margin-left: 1px;
   line-height: 18px;
+  border: 2px solid var(--input-gray);
+  border-radius: 3px;
+}
+
+.feedback-popup input[type="text"]:hover,
+.feedback-popup input[type="email"]:hover,
+.feedback-popup textarea:hover {
+  border-color: var(--input-gray-hover);
+}
+
+.feedback-popup input[type="text"]:focus,
+.feedback-popup input[type="email"]:focus,
+.feedback-popup textarea:focus {
+  border-color: var(--basic-black);
+  color: var(--basic-gray-dark);
+}
+
+.feedback-popup input[type="text"]:invalid,
+.feedback-popup input[type="email"]:invalid,
+.feedback-popup textarea:invalid {
+  border-color: var(--button-red-middle);
+  color: var(--button-red-middle);
 }
 
 .button-popup {

@@ -115,7 +115,7 @@ img {
 
 .active-page-link {
   border-bottom: 2px solid var(--button-red);
-  padding-bottom: 11px;
+  padding-bottom: px;
 }
 
 .main-header-navigation {
@@ -739,7 +739,7 @@ img {
 
 .page-catalog{
   display: grid;
-  grid-template-columns: 393px 1fr;
+  grid-template-columns: 400px 1fr;
   align-content: start;
   padding-top: 56px ;
 }
@@ -821,16 +821,36 @@ fieldset ul {
 
 .filter-grid-type {
   border: none;
-  margin-top: 54px;
+  margin-top: 44px;
   margin-left: 0;
+  padding-left: 0;
 }
 
 .grid-type {
-  padding-top: 20px;
+  display: flex;
+  margin-top: 8px;
+}
+
+.grid-type input[type="radio"] {
+  width: 25px;
+  height: 25px;
+  margin-bottom: 7px;
+  background: url("../img/radio-off.svg");
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+.grid-type input[type="radio"]:checked {
+  width: 25px;
+  height: 25px;
+  background: url("../img/radio-on.svg");
+  background-repeat: no-repeat;
+  cursor: pointer;
 }
 
 .grid-type-label {
   padding-left: 11px;
+  line-height: 25px;
 }
 
 .filter-features-label {
@@ -838,9 +858,30 @@ fieldset ul {
 }
 
 .filter-features {
+  display: flex;
+  align-items: center;
+  align-self: center;
   border: none;
-  margin-top: 43px;
+  margin-top: 25px;
   margin-left: 0;
+  padding-left: 0;
+}
+
+.grid-type input[type="checkbox"] {
+  width: 25px;
+  height: 23px;
+  margin-bottom: 7px;
+  background: url("../img/checkbox-off.svg");
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+.grid-type input[type="checkbox"]:checked {
+  width: 25px;
+  height: 23px;
+  background: url("../img/checkbox-on.svg");
+  background-repeat: no-repeat;
+  cursor: pointer;
 }
 
 .cost-input {
@@ -865,6 +906,14 @@ fieldset ul {
 .high-price {
   float: right;
   text-transform: uppercase;
+}
+
+.high-price input {
+  width: 74px;
+  margin-left: 10px;
+  padding-left: 0px;
+  padding-right: 6px;
+  text-align: right;
 }
 
 .button-gray {
@@ -899,8 +948,6 @@ fieldset ul {
   text-transform: uppercase;
   color: var(--basic-black);
   grid-column: 2;
-  /* outline: 5px solid #2da0a0;
-  outline-offset: -5px; */
   padding-bottom: 45px;
   display: flex;
   align-items: center;
@@ -928,6 +975,22 @@ fieldset ul {
   color: var(--button-black-hover);
 }
 
+.descend {
+  background: url("../img/icon-down-dir.svg");
+  background-repeat: no-repeat;
+  display: block;
+  width: 11px;
+  height: 10px;
+}
+
+.ascend {
+  background: url("../img/icon-up-dir.svg");
+  background-repeat: no-repeat;
+  display: block;
+  width: 11px;
+  height: 10px;
+}
+
 .active-link,
 .sort-link:active,
 .sort-link:focus {
@@ -943,8 +1006,6 @@ fieldset ul {
   line-height: 18px;
   font-weight: 400;
   color: var(--basic-gray-middle);
-  /* outline: 5px solid #2061ee;
-  outline-offset: -5px; */
 }
 
 .templates-item{

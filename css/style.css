@@ -57,6 +57,9 @@
   background-color: var(--basic-white);
   min-height: 100%;
   position: relative;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  align-content: start;
 }
 
 .visually-hidden {
@@ -1051,7 +1054,7 @@ fieldset ul {
   position: absolute;
   z-index: 10;
   box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.4);
-  bottom: 4.5%;
+  bottom: 9.6%;
   left: 24.8%;
 }
 

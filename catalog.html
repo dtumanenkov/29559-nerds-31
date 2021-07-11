@@ -50,15 +50,15 @@
               <legend class="caption">Сетка:</legend>
               <ul>
                 <li class="grid-type">
-                  <input type="radio" name="radio" id="filter-adaptive" checked value="adaptive">
+                  <input class="visually-hidden filter-input-radio" type="radio" name="radio" id="filter-adaptive" checked value="adaptive">
                   <label class="grid-type-label" for="filter-adaptive">Адаптивная</label>
                 </li>
                 <li class="grid-type">
-                  <input type="radio" name="radio" id="filter-fixed" value="fixed">
+                  <input class="visually-hidden filter-input-radio" type="radio" name="radio" id="filter-fixed" value="fixed">
                   <label class="grid-type-label" for="filter-fixed">Фиксированная</label>
                 </li>
                 <li class="grid-type">
-                  <input type="radio" name="radio" id="filter-rubber" value="rubber">
+                  <input class="visually-hidden filter-input-radio" type="radio" name="radio" id="filter-rubber" value="rubber">
                   <label class="grid-type-label" for="filter-rubber">Резиновая</label>
                 </li>
               </ul>
@@ -67,23 +67,23 @@
               <legend class="caption">Особенности:</legend>
               <ul>
                 <li class="grid-type">
-                  <input type="checkbox" name="slider" id="filter-slider" checked value="slider">
+                  <input class="visually-hidden filter-input-checkbox" type="checkbox" name="slider" id="filter-slider" checked value="slider">
                   <label class="filter-features-label" for="filter-slider">Слайдер</label>
                 </li>
                 <li class="grid-type">
-                  <input type="checkbox" name="advantages" id="filter-advantages" value="advantages">
+                  <input class="visually-hidden filter-input-checkbox" type="checkbox" name="advantages" id="filter-advantages" value="advantages">
                   <label class="filter-features-label" for="filter-advantages">Блок преимуществ</label>
                 </li>
                 <li class="grid-type">
-                  <input type="checkbox" name="news" id="filter-news" checked value="news">
+                  <input class="visually-hidden filter-input-checkbox" type="checkbox" name="news" id="filter-news" checked value="news">
                   <label class="filter-features-label" for="filter-news">Новости</label>
                 </li>
                 <li class="grid-type">
-                  <input type="checkbox" name="gallery" id="filter-gallery" value="gallery">
+                  <input class="visually-hidden filter-input-checkbox" type="checkbox" name="gallery" id="filter-gallery" value="gallery">
                   <label class="filter-features-label" for="filter-gallery">Галерея</label>
                 </li>
                 <li class="grid-type">
-                  <input type="checkbox" name="cart" id="filter-cart" value="cart">
+                  <input class="visually-hidden filter-input-checkbox" type="checkbox" name="cart" id="filter-cart" value="cart">
                   <label class="filter-features-label" for="filter-cart">Корзина</label>
                 </li>
               </ul>
@@ -99,8 +99,10 @@
               <li><a class="sort-link active-link" href="#">По цене</a></li>
               <li><a class="sort-link" href="#">По типу</a></li>
               <li><a class="sort-link" href="#">По названию</a></li>
-              <li><a class="sort-link active-link descend" href="#"></a></li>
-              <li><a class="sort-link ascend" href="#"></a></li>
+            </ul>
+            <ul class="sort-direction">
+              <li><a class="active-link descend" href="#"></a></li>
+              <li><a class="ascend" href="#"></a></li>
             </ul>
           </section>
           <section class="templates">
@@ -110,7 +112,7 @@
               <div class="templates-overview">
                 <h3><a class="caption templates-link" href="#">Sedona</a></h3>
                 <p>Информационный сайт<br>для туристов</p>
-                <a class="button button-templates button-red" href="#">9900 ₽</a>
+                <a class="button button-templates button-red" href="#">9 900 ₽</a>
               </div>
             </li>
             <li class="templates-item">
@@ -118,7 +120,7 @@
               <div class="templates-overview">
                 <h3><a class="caption templates-link" href="#">Pink app</a></h3>
                 <p>Продуктовый лендинг<br>приложения для iOS и Android</p>
-                  <a class="button button-templates button-red" href="#">9900 ₽</a>
+                  <a class="button button-templates button-red" href="#">9 900 ₽</a>
               </div>
             </li>
             <li class="templates-item">
@@ -126,7 +128,7 @@
               <div class="templates-overview">
                 <h3><a class="caption" href="#">Barbershop</a></h3>
                 <p>Продуктовый лендинг<br>приложения для iOS и Android</p>
-                <a class="button button-templates button-red" href="#">9900 ₽</a>
+                <a class="button button-templates button-red" href="#">9 900 ₽</a>
               </div>
             </li>
             <li class="templates-item">
@@ -134,7 +136,7 @@
               <div class="templates-overview">
                 <h3><a class="caption" href="#">Mishka</a></h3>
                 <p>Продуктовый лендинг<br>приложения для iOS и Android</p>
-                <a class="button button-templates button-red" href="#">9900 ₽</a>
+                <a class="button button-templates button-red" href="#">9 900 ₽</a>
               </div>
             </li>
             <li class="templates-item">
@@ -142,7 +144,7 @@
               <div class="templates-overview">
                 <h3><a class="caption" href="#">Aplus</a></h3>
                 <p>Продуктовый лендинг приложения для iOS и Android copy</p>
-                <a class="button button-templates button-red" href="#">9900 ₽</a>
+                <a class="button button-templates button-red" href="#">9 900 ₽</a>
               </div>
             </li>
             <li class="templates-item">
@@ -150,15 +152,7 @@
               <div class="templates-overview">
                 <h3><a class="caption" href="#">Кваст</a></h3>
                 <p>Промо-сайт производителя<br>крафтового кваса</p>
-                <a class="button button-templates button-red" href="#">9900 ₽</a>
-              </div>
-            </li>
-            <li class="templates-item">
-              <img src="img/img-kvast.jpg" width="358" height="578" alt="Макет Кваст">
-              <div class="templates-overview">
-                <h3><a class="caption" href="#">Кваст</a></h3>
-                <p>Промо-сайт производителя<br>крафтового кваса</p>
-                <a class="button button-templates button-red" href="#">9900 ₽</a>
+                <a class="button button-templates button-red" href="#">9 900 ₽</a>
               </div>
             </li>
           </ul>

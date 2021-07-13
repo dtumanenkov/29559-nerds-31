@@ -52,7 +52,7 @@
   min-width: 1200px;
   margin: 0;
   padding: 0;
-  font-family: "Roboto", Arial, sans-serif;
+  font-family: "Roboto", "Arial", "sans-serif";
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
@@ -244,7 +244,7 @@ img {
 
 .slider-features-list-item {
   margin: 0;
-  font-family: "Roboto", Arial, sans-serif;
+  font-family: "Roboto", "Arial", "sans-serif";
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
@@ -276,7 +276,7 @@ img {
 }
 
 .button {
-  font-family: "Roboto", Arial, sans-serif;
+  font-family: "Roboto", "Arial", "sans-serif";
   font-weight: 500;
   font-size: 16px;
   text-align: center;
@@ -736,7 +736,7 @@ img {
 /* Каталог */
 
 .main h1 {
-  font-family: "Roboto", Arial, sans-serif;
+  font-family: "Roboto", "Arial", "sans-serif";
   font-size: 55px;
   line-height: 55px;
   font-weight: 500;
@@ -768,7 +768,7 @@ img {
 
 .filter {
   background-color: var(--basic-white);
-  font-family: "Roboto", Arial, sans-serif;
+  font-family: "Roboto", "Arial", "sans-serif";
   font-size: 16px;
   line-height: 20px;
   font-weight: 400;
@@ -1012,7 +1012,7 @@ fieldset ul {
 
 .sort {
   background-color: var(--basic-white);
-  font-family: "Roboto", Arial, sans-serif;
+  font-family: "Roboto", "Arial", "sans-serif";
   font-size: 14px;
   line-height: 18px;
   font-weight: 400;
@@ -1093,7 +1093,7 @@ fieldset ul {
 
 .templates {
   background-color: var(--basic-white);
-  font-family: "Roboto", Arial, sans-serif;
+  font-family: "Roboto", "Arial", "sans-serif";
   font-size: 16px;
   line-height: 18px;
   font-weight: 400;
@@ -1202,7 +1202,7 @@ fieldset ul {
 
 .pagination {
   background-color: var(--basic-white);
-  font-family: "Roboto", Arial, sans-serif;
+  font-family: "Roboto", "Arial", "sans-serif";
   font-size: 16px;
   line-height: 18px;
   font-weight: 500;

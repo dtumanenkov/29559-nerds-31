@@ -1,4 +1,5 @@
 /* Переменные */
+
 :root {
   --basic-black: #000000;
   --basic-white: #ffffff;
@@ -51,7 +52,7 @@
   min-width: 1200px;
   margin: 0;
   padding: 0;
-  font-family: "Roboto", Arial, sans-serif;
+  font-family: "Roboto", "Arial", "sans-serif";
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
@@ -94,6 +95,7 @@ img {
 .page {
   height: 100%;
 }
+
 /* Header */
 
 .main-header {
@@ -163,7 +165,7 @@ img {
 }
 
 .logo-wrapper:active,
-.logo-wrapper:focus   {
+.logo-wrapper:focus {
   opacity: 0.3;
 }
 
@@ -242,7 +244,7 @@ img {
 
 .slider-features-list-item {
   margin: 0;
-  font-family: "Roboto", Arial, sans-serif;
+  font-family: "Roboto", "Arial", "sans-serif";
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
@@ -251,7 +253,7 @@ img {
   position: relative;
 }
 
-.not-active{
+.not-active {
   display: none;
 }
 
@@ -274,7 +276,7 @@ img {
 }
 
 .button {
-  font-family: "Roboto", Arial, sans-serif;
+  font-family: "Roboto", "Arial", "sans-serif";
   font-weight: 500;
   font-size: 16px;
   text-align: center;
@@ -376,13 +378,7 @@ img {
 .button-yellow:active {
   background-color: var(--button-yellow-dark);
 }
-/*
-.button-red:active,
-.button-green:active,
-.button-yellow:active {
-  color: var(--button-white);
-}
-*/
+
 .slider-button {
   background-color: var(--basic-white);
   padding: 0;
@@ -395,6 +391,7 @@ img {
 }
 
 /* Сервисы */
+
 .services {
   background-color: var(--basic-white);
   font-size: 16px;
@@ -442,10 +439,6 @@ img {
   border-bottom: 2px solid var(--background-gray);
 }
 
-/* .services-item {
-
-} */
-
 .services-item p {
   margin-bottom: 32px;
 }
@@ -480,6 +473,7 @@ img {
 .about-left-side h3 {
   margin-top: 40px;
 }
+
 .about-list {
   margin: 0;
   padding: 0;
@@ -509,7 +503,7 @@ img {
   line-height: 18px;
 }
 
-.about-metrics caption{
+.about-metrics caption {
   margin-bottom: 31px;
 }
 
@@ -518,6 +512,7 @@ img {
   margin-bottom: 34px;
   margin-left: 5px;
 }
+
 .about-metrics {
   background-color: var(--basic-white);
 }
@@ -548,21 +543,24 @@ img {
   line-height: 40px;
 }
 
-.about-metrics td{
+.about-metrics td {
   padding: 1px 16px 10px 4px;
   margin: 0;
 }
 
 /* Клиенты */
+
 .clients {
   line-height: 0;
   border-bottom: 2px solid var(--background-gray);
 }
+
 .clients-container {
   margin: 0 auto;
   width: 1200px;
   padding: 42px 0px 39px 0px;
 }
+
 .clients-list {
   list-style: none;
   margin: 0;
@@ -627,7 +625,7 @@ img {
 
 /* Контакты */
 
-.contact-block{
+.contact-block {
   position: relative;
   height: 416px;
   background-color: transparent;
@@ -639,6 +637,7 @@ img {
   z-index: 1;
   width: 100%;
 }
+
 .contact-list {
   position: absolute;
   top: 54px;
@@ -670,6 +669,7 @@ img {
 .social-networks {
   background-color: var(--basic-white);
 }
+
 .social-networks-wrapper{
   display: grid;
   grid-template-columns: 400px 1fr;
@@ -696,14 +696,14 @@ img {
   border-radius: 50%;
 }
 
-.social-networks-item-link  {
+.social-networks-item-link {
   display: block;
   text-align: center;
   padding-top: 30px;
   padding-bottom: 30px;
 }
 
-.social-networks-item-link:active  {
+.social-networks-item-link:active {
   opacity: 0.3;
 }
 
@@ -728,8 +728,6 @@ img {
 }
 
 .social-networks-discount {
-  /* outline: 5px solid #dd20ee;
-  outline-offset: -5px; */
   grid-column: 2/3;
   grid-row: 2;
   margin: 0;
@@ -738,7 +736,7 @@ img {
 /* Каталог */
 
 .main h1 {
-  font-family: "Roboto", Arial, sans-serif;
+  font-family: "Roboto", "Arial", "sans-serif";
   font-size: 55px;
   line-height: 55px;
   font-weight: 500;
@@ -761,7 +759,7 @@ img {
   line-height: 45px;
 }
 
-.page-catalog{
+.page-catalog {
   display: grid;
   grid-template-columns: 400px 1fr;
   align-content: start;
@@ -770,7 +768,7 @@ img {
 
 .filter {
   background-color: var(--basic-white);
-  font-family: "Roboto", Arial, sans-serif;
+  font-family: "Roboto", "Arial", "sans-serif";
   font-size: 16px;
   line-height: 20px;
   font-weight: 400;
@@ -951,7 +949,7 @@ fieldset ul {
   padding-left: 0;
 }
 
-.filter-features .grid-type{
+.filter-features .grid-type {
   margin-bottom: 20px;
   margin-top: 10px;
   padding-left: 22px;
@@ -994,7 +992,7 @@ fieldset ul {
   color: var(--basic-black);
 }
 
-.button-filter{
+.button-filter {
   width: 260px;
   height: 50px;
   margin-top: 20px;
@@ -1014,7 +1012,7 @@ fieldset ul {
 
 .sort {
   background-color: var(--basic-white);
-  font-family: "Roboto", Arial, sans-serif;
+  font-family: "Roboto", "Arial", "sans-serif";
   font-size: 14px;
   line-height: 18px;
   font-weight: 400;
@@ -1066,7 +1064,7 @@ fieldset ul {
   width: 11px;
   height: 10px;
   opacity: 0.2;
-  position: relative;;
+  position: relative;
 }
 
 .ascend {
@@ -1078,6 +1076,7 @@ fieldset ul {
   opacity: 0.2;
   padding-right: 12px;
 }
+
 .descend:hover,
 .ascend:hover {
   opacity: 0.6;
@@ -1094,7 +1093,7 @@ fieldset ul {
 
 .templates {
   background-color: var(--basic-white);
-  font-family: "Roboto", Arial, sans-serif;
+  font-family: "Roboto", "Arial", "sans-serif";
   font-size: 16px;
   line-height: 18px;
   font-weight: 400;
@@ -1103,7 +1102,7 @@ fieldset ul {
   flex-direction: column;
 }
 
-.templates-item{
+.templates-item {
   width: 358px;
   height: 580px;
   padding-top: 40px;
@@ -1136,7 +1135,7 @@ fieldset ul {
   display: none;
 }
 
-.templates-item:hover .templates-overview{
+.templates-item:hover .templates-overview {
   opacity: 1;
   box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.25);
   display: block;
@@ -1145,14 +1144,14 @@ fieldset ul {
 .templates-overview {
   background-color: var(--background-gray);
   width: 100%;
-  height: 231px;
+  min-height: 231px;
   position: absolute;
   bottom: 0;
   text-align: center;
   border-radius: 0 0 3px 3px
 }
 
-.templates-overview h3{
+.templates-overview h3 {
   margin-bottom: 0;
   padding-bottom: 1px;
 }
@@ -1160,6 +1159,8 @@ fieldset ul {
 .templates-overview p {
   margin-top: 12px;
   margin-bottom: 32px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .templates-list {
@@ -1194,13 +1195,14 @@ fieldset ul {
   display: block;
   width: 200px;
   margin: 0 auto;
+  margin-bottom: 44px;
 }
 
 /* страничная навигация */
 
 .pagination {
   background-color: var(--basic-white);
-  font-family: "Roboto", Arial, sans-serif;
+  font-family: "Roboto", "Arial", "sans-serif";
   font-size: 16px;
   line-height: 18px;
   font-weight: 500;
@@ -1234,6 +1236,7 @@ fieldset ul {
 }
 
 /* Попап */
+
 .feedback-popup {
   color: var(--basic-black);
   margin: auto;
@@ -1251,6 +1254,7 @@ fieldset ul {
   margin: 70px 100px 84px 100px;
   position: relative;
 }
+
 .popup-container {
   display: flex;
   flex-wrap: wrap;
@@ -1265,6 +1269,7 @@ fieldset ul {
   margin-bottom: 52px;
   color: var(--basic-black);
 }
+
 .popup-close-button {
   width: 21px;
   height: 21px;
@@ -1282,7 +1287,7 @@ fieldset ul {
   opacity: 1;
 }
 
-.popup-close-button:active{
+.popup-close-button:active {
   opacity: 0.1;
 }
 

@@ -254,13 +254,7 @@ img {
   position: relative;
 }
 
-.not-active {
-  display: none;
-}
-
 .slider-img {
-  /* outline: 5px solid #4b3ef5;
-  outline-offset: -5px; */
   position: absolute;
   right: 2px;
 }

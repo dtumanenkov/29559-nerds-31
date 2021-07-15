@@ -6,7 +6,7 @@
     <link rel="icon" href="favicon.ico">
     <link  rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
     <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
   </head>
   <body class="page-body">
     <header class="main-header">
@@ -51,12 +51,12 @@
               <p class="slider-overview">Работать днем, как все? Мы против этого.<br>Ближе к полуночи работа только начинается.</p>
               <a class="button features-button button-red" href="studio.html">Узнать больше</a>
             </li>
-            <li class="slider-control">
-              <button class="slider-button control-active" type="button" aria-label="Первый слайд"></button>
-              <button class="slider-button" type="button" aria-label="Второй слайд"></button>
-              <button class="slider-button" type="button" aria-label="Третий слайд"></button>
-            </li>
           </ul>
+          <div class="slider-control">
+            <button class="slider-button control-active" type="button" aria-label="Первый слайд"></button>
+            <button class="slider-button" type="button" aria-label="Второй слайд"></button>
+            <button class="slider-button" type="button" aria-label="Третий слайд"></button>
+          </div>
         </div>
       </section>
       <section class="services container">
@@ -173,7 +173,7 @@
         </div>
       </section>
     </footer>
-    <section class="visually-hidden feedback-popup">
+    <section class="not-active feedback-popup">
       <form method="POST" action="https://echo.htmlacademy.ru/">
        <h3>Напишите нам</h3>
        <button class="popup-close-button" type="button"></button>

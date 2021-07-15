@@ -6,7 +6,7 @@
     <link rel="icon" href="favicon.ico">
     <link  rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
     <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
   </head>
   <body class="page-body">
     <header class="main-header">
@@ -40,8 +40,8 @@
                 <div class="scale">
                   <div class="bar"></div>
                 </div>
-                <div class="toggle min-toggle"></div>
-                <div class="toggle max-toggle"></div>
+                <div tabindex="0" class="toggle min-toggle" title="Ползунок минимальной цены фильтра"></div>
+                <div tabindex="0" class="toggle max-toggle" title="Ползунок максимальной цены фильтра"></div>
               </div>
               <label class="low-price">От<input class="cost-input" type="text" name="min_value" value="0"></label>
               <label class="high-price">До<input class="cost-input" type="text" name="max_value" value="150 000"></label>
@@ -88,7 +88,7 @@
                 </li>
               </ul>
             </fieldset>
-            <button class="button button-gray button-filter" type="submit">Показать</button>
+            <button class="button button-gray button-filter" type="submit" aria-label="Применить фильтры для выбора нужного товара">Показать</button>
         </form>
         </section>
         <div class="catalog">
@@ -101,8 +101,8 @@
               <li><a class="sort-link" href="#">По названию</a></li>
             </ul>
             <ul class="sort-direction">
-              <li><a class="active-link descend" href="#"></a></li>
-              <li><a class="ascend" href="#"></a></li>
+              <li><a class="active-link descend" href="#" aria-label="Сортировать по убыванию цены"></a></li>
+              <li><a class="ascend" href="#" aria-label="Сортировать по возрастанию цены"></a></li>
             </ul>
           </section>
           <section class="templates">
@@ -127,7 +127,7 @@
               <img src="img/img-barbershop.jpg" width="358" height="578" alt="Макет Barbershop">
               <div class="templates-overview-not-active templates-overview">
                 <h3><a class="caption  templates-link" href="#">Barbershop</a></h3>
-                <p>Продуктовый лендинг<br>приложения для iOS и Android</p>
+                <p>Сайт салона красоты.<br>Для мужчин, да.</p>
                 <a class="button button-templates button-red" href="#">9 900 ₽</a>
               </div>
             </li>
@@ -135,7 +135,7 @@
               <img src="img/img-mishka.jpg" width="358" height="578" alt="Макет Mishka">
               <div class="templates-overview-not-active templates-overview">
                 <h3><a class="caption  templates-link" href="#">Mishka</a></h3>
-                <p>Продуктовый лендинг<br>приложения для iOS и Android</p>
+                <p>Интернет-магазин<br>вязаных игрушек</p>
                 <a class="button button-templates button-red" href="#">9 900 ₽</a>
               </div>
             </li>
@@ -143,7 +143,7 @@
               <img src="img/img-aplus.jpg" width="358" height="578" alt="Макет Aplus">
               <div class="templates-overview-not-active templates-overview">
                 <h3><a class="caption templates-link" href="#">Aplus</a></h3>
-                <p>Продуктовый лендинг<br>приложения для iOS и Android copy</p>
+                <p>Лендинг курсов повышения<br>квалификации</p>
                 <a class="button button-templates button-red" href="#">9 900 ₽</a>
               </div>
             </li>
@@ -213,9 +213,9 @@
        <h3>Напишите нам</h3>
        <button class="popup-close-button" type="button"></button>
        <div class="popup-container">
-        <label>Ваше имя:<br><input  type="text" placeholder="Имя Фамилия" name="name-surname"></label>
-        <label>Ваш email:<br><input  type="email" placeholder="email@example.com" name="email"></label>
-        <label>Текст письма:<br><textarea required name="letter-text" placeholder="В свободной форме" id="letter-text"></textarea></label>
+        <label>Ваше имя:<input  type="text" placeholder="Имя Фамилия" name="name-surname"></label>
+        <label>Ваш email:<input  type="email" placeholder="email@example.com" name="email"></label>
+        <label>Текст письма:<textarea required name="letter-text" placeholder="В свободной форме" id="letter-text"></textarea></label>
        </div>
        <button class="button button-red button-popup" type="submit">Отправить</button>
       </form>

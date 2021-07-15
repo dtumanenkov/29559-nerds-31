@@ -40,8 +40,8 @@
                 <div class="scale">
                   <div class="bar"></div>
                 </div>
-                <div class="toggle min-toggle"></div>
-                <div class="toggle max-toggle"></div>
+                <div tabindex="0" class="toggle min-toggle" title="Ползунок минимальной цены фильтра"></div>
+                <div tabindex="0" class="toggle max-toggle" title="Ползунок максимальной цены фильтра"></div>
               </div>
               <label class="low-price">От<input class="cost-input" type="text" name="min_value" value="0"></label>
               <label class="high-price">До<input class="cost-input" type="text" name="max_value" value="150 000"></label>
@@ -88,7 +88,7 @@
                 </li>
               </ul>
             </fieldset>
-            <button class="button button-gray button-filter" type="submit">Показать</button>
+            <button class="button button-gray button-filter" type="submit" aria-label="Применить фильтры для выбора нужного товара">Показать</button>
         </form>
         </section>
         <div class="catalog">

@@ -243,7 +243,7 @@ img {
   bottom: -15px;
   right: 0;
   background-color: var(--button-red);
-} 
+}
 
 /* Slider */
 
@@ -254,6 +254,7 @@ img {
   margin-bottom: 80px;
   background-color: var(--background-gray);
   position: relative;
+  overflow: hidden;
 }
 
 .slider .container{
@@ -294,7 +295,7 @@ img {
   margin-bottom: 0;
   margin-top: 0;
   width: 538px;
-  height: 111px;
+  min-height: 111px;
 }
 
 .button {
@@ -317,11 +318,10 @@ img {
 }
 
 .features-button {
-  /* outline: 5px solid #07ce8c;
-  outline-offset: -5px; */
   display: block;
   width: 242px;
   margin-top: 38px;
+  margin-bottom: 10px;
 }
 
 .slider-overview {
@@ -887,12 +887,23 @@ img {
   color: var(--basic-gray-blue);
 }
 
+
 .filter-input-radio:hover +label::before,
-.filter-input-radio:focus +label::after,
 .filter-input-checkbox:hover +label::before,
-.filter-input-checkbox:focus +label::after,
 .filter-input-checkbox:checked:hover + label::after,
 .filter-input-radio:checked:hover + label::after {
+  color: var(--background-item-grey);
+  opacity: 1;
+}
+
+.filter-input-radio:focus +label::before,
+.filter-input-radio:focus +label::after,
+.filter-input-checkbox:focus +label::before,
+.filter-input-checkbox:focus +label::after,
+.filter-input-radio:checked:focus +label::before,
+.filter-input-radio:checked:focus +label::after,
+.filter-input-checkbox:checked:focus +label::before,
+.filter-input-checkbox:checked:focus +label::after     {
   color: var(--background-item-grey);
   opacity: 1;
 }

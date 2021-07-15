@@ -117,6 +117,20 @@ img {
   opacity: 30%;
 }
 
+.site-navigation-link:active {
+  position: relative;
+}
+
+.site-navigation-link:active::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 3px;
+  right: 0;
+  background-color: var(--button-red);
+}
+
 .active-page-link {
   position: relative;
 }
@@ -194,6 +208,8 @@ img {
   font-weight: 500;
   line-height: 30px;
   position: relative;
+  padding-right: 0;
+  padding-bottom: 0;
 }
 
 .cart-link::before {
@@ -207,12 +223,6 @@ img {
   background-repeat: no-repeat;
 }
 
-.cart-link {
-  padding-right: 0;
-  padding-bottom: 0;
-  color: var(--basic-black);
-}
-
 .cart-link:hover {
   color: var(--button-red);
 }
@@ -220,6 +230,20 @@ img {
 .cart-link:focus {
   opacity: 30%;
 }
+
+.cart-link:active {
+  color: var(--basic-black);
+}
+
+.cart-link:active::after {
+  content: "";
+  position: absolute;
+  width: 112px;
+  height: 2px;
+  bottom: -15px;
+  right: 0;
+  background-color: var(--button-red);
+} 
 
 /* Slider */
 
@@ -232,8 +256,11 @@ img {
   position: relative;
 }
 
-.slider-features-list {
+.slider .container{
   position: relative;
+}
+
+.slider-features-list {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -306,21 +333,21 @@ img {
 .slider-control {
   position: absolute;
   bottom: 96px;
-  left: 536px;
+  left: 556px;
   display: flex;
   gap: 17px;
 }
 
 .slider-control .control-active:before {
   content: "";
-  width: 6px;
-  height: 6px;
+  width: 4px;
+  height: 4px;
   border-radius: 50%;
   border: 2px solid var(--slider-control-border);
   background-color: var(--basic-white);
   position: absolute;
-  top: 2px;
-  right: 2px;
+  top: 3px;
+  right: 3px;
  }
 
 .button-red {
@@ -602,7 +629,8 @@ img {
   opacity: 1;
 }
 
-.clients-item:focus {
+.clients-item:focus,
+.clients-item:active {
   opacity: 0.1;
 }
 
@@ -698,9 +726,14 @@ img {
   padding-bottom: 30px;
 }
 
-.social-networks-item-link:active {
+.social-networks-item:active {
+  background-color: var(--button-red-dark);
+}
+
+.social-networks-item:active img{
   opacity: 0.3;
 }
+
 
 .social-networks-item:hover {
   background-color: var(--button-red-middle);
@@ -716,10 +749,12 @@ img {
   color: var(--basic-black);
   font-size: 36px;
   font-weight: 700;
-  line-height: 52px;
+  line-height: 36px;
   grid-column: 2/3;
   grid-row: 1;
   margin: 0;
+  margin-top: 8px;
+  margin-bottom: 9px;
 }
 
 .social-networks-discount {
@@ -780,7 +815,8 @@ img {
   color: var(--basic-black);
 }
 
-fieldset ul {
+.filter-grid-type ul,
+.filter-features ul {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -861,6 +897,16 @@ fieldset ul {
   opacity: 1;
 }
 
+.filter-input-radio:disabled +label,
+.filter-input-checkbox:disabled +label,
+.filter-input-radio:disabled +label::before,
+.filter-input-radio:disabled +label::after,
+.filter-input-checkbox:disabled +label::before,
+.filter-input-checkbox:disabled +label::after {
+  color: var(--background-item-grey);
+  opacity: 0.1;
+}
+
 .filter-input-radio + label::before {
   content: "";
   position:absolute;
@@ -927,7 +973,9 @@ fieldset ul {
 
 .grid-type-label {
   padding-left: 11px;
-  line-height: 25px;
+  line-height: 20px;
+  padding-top: 3px;
+  padding-bottom: 2px;
 }
 
 .filter-features-label {
@@ -967,11 +1015,13 @@ fieldset ul {
 .low-price {
   float: left;
   text-transform: uppercase;
+  line-height: 22px;
 }
 
 .high-price {
   float: right;
   text-transform: uppercase;
+  line-height: 22px;
 }
 
 .high-price input {
@@ -1110,6 +1160,10 @@ fieldset ul {
   border-radius: 0 0 3px 3px;
 }
 
+.templates-item:hover {
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.25);
+}
+
 .templates-item::before {
   content: "";
   position: absolute;
@@ -1219,6 +1273,12 @@ fieldset ul {
   border-radius: 3px;
 }
 
+.page-number:active {
+  background-color: var(--button-white);
+  border: 3px solid var(--button-gray-active);
+  padding: 14px 17px 12px 17px;
+}
+
 .active-page {
   background-color: var(--button-white);
   border: 3px solid var(--button-gray-active);
@@ -1230,23 +1290,29 @@ fieldset ul {
   padding-right: 77px;
 }
 
+.next-page:active {
+  background-color: var(--button-white);
+  border: 3px solid var(--button-gray-active);
+  padding: 14px 75px 12px 74px;
+}
+
 /* Попап */
 
 .feedback-popup {
   color: var(--basic-black);
   margin: auto;
   width: 960px;
-  height: 590px;
+  min-height: 590px;
   background-color: var(--basic-white);
   position: absolute;
   z-index: 10;
   box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.4);
-  bottom: 9.6%;
-  left: 24.8%;
+  bottom: 7.1%;
+  left: 24.6%;
 }
 
 .feedback-popup form {
-  margin: 70px 100px 84px 100px;
+  margin: 62px 100px 84px 100px;
   position: relative;
 }
 
@@ -1259,9 +1325,9 @@ fieldset ul {
 .feedback-popup h3 {
   font-size: 45px;
   font-weight: 700;
-  line-height: 30px;
-  margin-top: 63px;
-  margin-bottom: 52px;
+  line-height: 53px;
+  margin-top: 0px;
+  margin-bottom: 37px;
   color: var(--basic-black);
 }
 
@@ -1273,7 +1339,7 @@ fieldset ul {
   border: 0;
   position: absolute;
   right: -10px;
-  top: 8px;
+  top: 12px;
   cursor: pointer;
   opacity: 0.3;
 }
@@ -1294,6 +1360,10 @@ fieldset ul {
 }
 
 .feedback-popup input[type="text"] {
+  font-family: "Roboto", "Arial", "sans-serif";
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 400;
   display: block;
   padding: 13px 0px 13px 15px;
   width: 340px;
@@ -1304,8 +1374,12 @@ fieldset ul {
 }
 
 .feedback-popup input[type="email"] {
+  font-family: "Roboto", "Arial", "sans-serif";
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 400;
   display: block;
-  padding: 13px 0px 13px 16px;
+  padding: 13px 0px 13px 15px;
   width: 340px;
   margin-top: 9px;
   margin-bottom: 36px;
@@ -1314,16 +1388,21 @@ fieldset ul {
 }
 
 .feedback-popup textarea {
+  font-family: "Roboto", "Arial", "sans-serif";
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 400;
   display: block;
   padding: 14px 10px 16px 16px;
   width: 732px;
   height: 85px;
-  margin-top: 9px;
-  margin-bottom: 43px;
-  margin-left: 1px;
+  margin-top: 8px;
+  margin-bottom: 45px;
+  margin-left: 0px;
   line-height: 18px;
   border: 2px solid var(--input-gray);
   border-radius: 3px;
+  resize: none;
 }
 
 .feedback-popup input[type="text"]:hover,

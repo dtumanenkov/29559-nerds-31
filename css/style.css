@@ -1207,7 +1207,7 @@ img {
 .templates-overview {
   background-color: var(--background-gray);
   width: 100%;
-  min-height: 231px;
+  height: 231px;
   position: absolute;
   top: 62.5%;
   text-align: center;
@@ -1225,6 +1225,8 @@ img {
   margin-bottom: 32px;
   padding-left: 10px;
   padding-right: 10px;
+  height: 37px;
+  overflow-y: auto;
 }
 
 .templates-list {

@@ -40,6 +40,8 @@
   --input-gray-hover: #b4b9bb;
 
   --templates-gray-border: #f2f2f2;
+
+  --separator-gray: #c4c4c4;
 }
 
 /* Global */
@@ -119,16 +121,7 @@ img {
 
 .site-navigation-link:active {
   position: relative;
-}
-
-.site-navigation-link:active::after {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 2px;
-  bottom: 3px;
-  right: 0;
-  background-color: var(--button-red);
+  opacity: 0.3;
 }
 
 .active-page-link {
@@ -137,6 +130,10 @@ img {
 
 .user-cart .active-page-link {
   position: relative;
+}
+
+.user-cart:active {
+  opacity: 0.3;
 }
 
 .active-page-link::after {
@@ -149,7 +146,11 @@ img {
   background-color: var(--button-red);
 }
 
-.user-cart .active-page-link::after {
+.active-page-link-cart {
+  position: relative;
+}
+
+.active-page-link-cart::after {
   content: "";
   position: absolute;
   width: 112px;
@@ -596,7 +597,6 @@ img {
 
 .clients-item {
   background-color: var(--basic-white);
-  opacity: 0.2;
   height: 99px;
   position: relative;
   width: 300px;
@@ -614,25 +614,20 @@ img {
   position: absolute;
   width: 2px;
   height: 52px;
-  background-color: var(--basic-black);
+  background-color: var(--separator-gray);
   right: 0;
   top: 25%;
 }
 
-.clients-item:hover::after {
+.clients-item-link {
   opacity: 0.2;
 }
 
-.clients-item:focus::after {
-  opacity: 0.2;
-}
-
-.clients-item:hover {
+.clients-item-link:hover {
   opacity: 1;
 }
 
-.clients-item:focus,
-.clients-item:active {
+.clients-item-link:active {
   opacity: 0.1;
 }
 
@@ -910,14 +905,18 @@ img {
   opacity: 1;
 }
 
-.filter-input-radio:disabled +label,
-.filter-input-checkbox:disabled +label,
 .filter-input-radio:disabled +label::before,
 .filter-input-radio:disabled +label::after,
 .filter-input-checkbox:disabled +label::before,
 .filter-input-checkbox:disabled +label::after {
   color: var(--background-item-grey);
   opacity: 0.1;
+}
+
+.filter-input-radio:disabled +label,
+.filter-input-checkbox:disabled +label {
+  color: var(--background-item-grey);
+  opacity: 0.3;
 }
 
 .filter-input-radio + label::before {
@@ -1207,7 +1206,7 @@ img {
 .templates-overview {
   background-color: var(--background-gray);
   width: 100%;
-  min-height: 231px;
+  height: 231px;
   position: absolute;
   top: 62.5%;
   text-align: center;
@@ -1225,6 +1224,8 @@ img {
   margin-bottom: 32px;
   padding-left: 10px;
   padding-right: 10px;
+  max-height: 37px;
+  overflow-y: auto;
 }
 
 .templates-list {
@@ -1289,9 +1290,9 @@ img {
 }
 
 .page-number:active {
-  background-color: var(--button-white);
-  border: 3px solid var(--button-gray-active);
-  padding: 14px 17px 12px 17px;
+  background-color: var(--button-gray-dark);
+  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+  color: var(--button-black);
 }
 
 .active-page {
@@ -1306,9 +1307,10 @@ img {
 }
 
 .next-page:active {
-  background-color: var(--button-white);
-  border: 3px solid var(--button-gray-active);
-  padding: 14px 75px 12px 74px;
+  background-color: var(--button-gray-dark);
+  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+  color: rgba(0, 0, 0, 0.3);
+  padding: 16px 75px 16px 74px;
 }
 
 /* Попап */
